@@ -1,0 +1,808 @@
+@import "mixins.styl"
+body
+  margin 0
+  padding 0
+  width 100%
+  height 100%
+  background #fff
+  box-sizing border-box
+  .app_top
+    max-width 640px
+    margin 0 auto
+    background rgba(61,61,61,1)
+    color #fff
+    position relative
+    z-index 102
+    .top_wrap
+      position relative
+      .wrap_span
+        display inline-block
+        width 5%
+        margin-right 2%
+        vertical-align middle
+        position absolute
+        top 20%
+        left 2%
+        .wrap_img
+          height 100%
+          width 100%
+          vertical-align middle
+      .wrap_div
+        display block
+        .wrap_a
+          display block
+          text-decoration none
+          /*-webkit-tap-highlight-color rgba(0,0,0,0)*/
+          .xia_zai
+            vertical-align middle
+            display block
+            width 100%
+
+  #app
+    max-width 640px
+    margin auto
+    .content
+      height 86px
+      >div
+        width 100%
+        height 100%
+        display none
+        &.on
+          display block
+          .header1
+            z-index 100
+            height 86px
+            .header_wrap
+              max-width 640px
+              margin auto
+            .up
+              padding-left 10px
+              padding-bottom 5px
+              padding-right 10px
+              padding-top 5px
+              .up_wrap
+                padding 8px 0
+                background #ffffff
+                text-align center
+                display -webkit-box
+                -webkit-box-align center
+                width 100%
+                .wrap_city
+                  margin-right 20px
+                  position relative
+                  font-size 14px
+                  float left
+                  a
+                    color #333
+                    text-decoration none
+                    -webkit-tap-highlight-color rgba(0,0,0,0)
+                    span
+                      color #898989
+                    &.s3
+                      font-size 13px
+                    i
+                      position absolute
+                      top 6px
+                      right -12px
+                      border-width 4px
+                      font-size 0
+                      line-height 0
+                      border-style solid solid dotted
+                      border-color #898989 transparent transparent
+                      font-style normal
+                .wrap_search
+                  display block
+                  position relative
+                  -webkit-box-flex 1
+                  a
+                    color #333333
+                    text-decoration none
+                    -webkit-tap-highlight-color rgba(0,0,0,0)
+                    input
+                      width 100%
+                      border 0
+                      height 25px
+                      background #e9e9e9
+                      border-radius 4px
+                      color #bcbcbc
+                      text-indent 10px
+                      font-size 13px
+                      outline 0
+                    .wrap_icon
+                      width 11px
+                      height 11px
+                      position absolute
+                      right 5px
+                      top 0
+                      bottom 0
+                      margin auto 0
+                      background-position 0 0
+                      background-image url("../images/search.png")
+                      background-size 11px auto
+
+                .wrap_new
+                  display block
+                  color #333333
+                  text-decoration none
+                  -webkit-tap-highlight-color rgba(0,0,0,0)
+                  img
+                    width 25px
+                    margin-left 10px
+                    border 0
+                    vertical-align middle
+            .down
+              width 100%
+              height 35px
+              min-width 320px
+              .down_wrap
+                overflow-x auto
+                overflow-y hidden
+                .wrap_list
+                  width 140%
+                  ul
+                    white-space nowrap
+                    display flex
+                    list-style none
+                    .list_li
+                      width 74.6429px
+                      float left
+                      list-style none
+                      display list-item
+                      text-align -webkit-match-parent
+                      a
+                        display block
+                        width 100%
+                        height 100%
+                        line-height 36px
+                        font-size 14px
+                        text-align center
+                        color #666
+                        text-decoration none
+                        -webkit-tap-highlight-color rgba(0,0,0,0)
+                        >span
+                          position relative
+                          >i
+                            position absolute
+                            bottom 1px
+                            left -10%
+                            width 32px
+                            height 2px
+                            font-style normal
+                        .list_span
+                          color #459d36
+                          display inline-block
+                          .list_shouye
+                            color #459d36
+                            display inline-block
+                          .list_i
+                            background #459d36
+
+          .swiper-slide
+            width 375px
+            height auto
+            img
+              width 100%
+              height 100%
+          .d1_d3
+            pointer-events auto
+            width 100%
+            img
+              display block
+              width 100%
+          .d1_d4
+            pointer-events auto
+            width 100%
+            ul
+              width 100%
+              display flex
+              flex-wrap wrap
+              pointer-events auto
+              li
+                width 20%
+                list-style none
+                display list-item
+                text-align -webkit-match-parent
+                a
+                  width 100%
+                  color #7e8c8d
+                  text-decoration none
+                  img
+                    width 100%
+                    display block
+          .d1_d5
+            pointer-events auto
+            width 100%
+            img
+              display block
+              width 100%
+          .d1_d6
+            width 100%
+            padding 10px
+            box-sizing border-box
+            //-webkit-box-pack justify
+            justify-content space-between
+            .d6_top
+              display flex
+              width 100%
+              .top_l
+                flex 0 50%
+                img
+                  display inline-block
+                  margin-top 6px
+                  width 85px
+              .top_r
+                flex 0 50%
+                display flex
+                -webkit-box-align center
+                align-items center
+                .b_text
+                  font-size 13px
+                  margin-right 9px
+                .b_time
+                  span
+                    display inline-block
+                    border 1px solid #ddd
+                    font-size 13px
+                    padding 2px 0
+                .b_a
+                  display inline-block
+                  width 67px
+                  height 34px
+                  a
+                    display inline-block
+                    width 100%
+                    height 100%
+                    color #7e8c8d
+                    text-decoration none
+                    img
+                      width 100%
+            .d6_bottom
+              width 100%
+              height 130px
+              padding-bottom 10px
+              padding-left 5px
+              margin 0 auto
+              position relative
+              overflow hidden
+              list-style none
+              z-index 1
+              ul
+                transform translate3d(0,0,0)
+                transition-duration 0ms
+                width 100%
+                height 130px
+                position relative
+                z-index 1
+                display flex
+                li
+                  width 105.714px
+                  font-size 14px
+                  text-align center
+                  height 130px
+                  flex-shrink 0
+                  position relative
+                  a
+                    display inline-block
+                    box-sizing border-box
+                    height 130px
+                    padding 0 2px
+                    color #7e8c8d
+                    text-decoration none
+                    .bottom_s1
+                      width 100%
+                      img
+                        width 100%
+                        box-sizing border-box
+                        padding 0 5%
+                        display block
+                    .bottom_s2
+                      width 100%
+                      display inline-block
+                      color #ff0000
+                      font-size 14px
+                      margin 5px 0
+                      padding 0
+                      font-weight normal
+                      vertical-align baseline
+                    .bottom_s3
+                      width 100%
+                      display inline-block
+                      color #999999
+                      font-size 12px
+          .d1_d7
+            pointer-events auto
+            width 100%
+            img
+              display block
+              width 100%
+          .d1_d8
+            pointer-events auto
+            width 100%
+            img
+              display block
+              width 100%
+          .d1_d9
+            pointer-events auto
+            width 100%
+            img
+              display block
+              width 100%
+          .d1_10
+            pointer-events auto
+            width 100%
+            display flex
+            ul
+              li
+                list-style none
+                a
+                  color #7e8c8d
+                  text-decoration none
+                  img
+                    width 100%
+                    display block
+          .d1_11
+            pointer-events auto
+            width 100%
+            img
+              display block
+              width 100%
+          .d1_13
+            pointer-events: auto
+            width: 100%
+            img
+              display: block
+              width: 100%
+          .d1_14
+            pointer-events: auto
+            width: 100%
+            display: flex
+            ul
+              li
+                list-style none
+                a
+                  color: #7e8c8d;
+                  text-decoration: none
+                  img
+                    width: 100%
+                    display: block
+          .d1_15
+            pointer-events: auto
+            width: 100%
+            img
+              display: block
+              width: 100%
+          .d1_16
+            pointer-events: auto
+            width: 100%
+            img
+              display: block
+              width: 100%
+          .d1_17
+            pointer-events: auto
+            width 100%
+            display flex
+            ul
+              li
+                list-style none
+                a
+                  color #7e8c8d
+                  text-decoration none
+                  img
+                    width 100%
+                    display block
+
+          .header2
+            padding 0 15px
+            border-bottom 1px solid #cbcbcb
+            position fixed
+            left 0
+            right 0
+            top 0
+            height 40px
+            background #ffffff
+            .header2_1
+              text-align right
+              padding-right 4%
+              width 44%
+              height 40px
+              line-height 40px
+              font-size 13px
+              float left
+              font-weight 700
+              a
+                color #333333
+                text-decoration none
+                -webkit-tap-highlight-color rgba(0,0,0,0)
+                span
+                  color #ed4044
+                  border-bottom 2px solid #ed4044
+                  display inline-block
+                  height 40px
+                  padding 0 4px
+            .header2_2
+              padding-left 4%
+              width 44%
+              height 40px
+              line-height 40px
+              font-size 13px
+              float left
+              font-weight 700
+              a
+                color #333333
+                text-decoration none
+                -webkit-tap-highlight-color rgba(0,0,0,0)
+                span
+                  display inline-block
+                  height 40px
+                  padding 0 4px
+            .header2_3
+              color #333333
+              text-decoration none
+              -webkit-tap-highlight-color rgba(0,0,0,0)
+              .icon
+                top 12px
+                right 15px
+                width 14px
+                height 14px
+                position absolute
+                border 0
+                vertical-align middle
+          .d2_wrap
+            padding-top 41px
+            .d2_left
+              position fixed
+              top 40px
+              left 0
+              overflow-y scroll
+              bottom 0
+              padding-bottom 45px
+              border-right 5px solid #f3f4f5
+              background #ffffff
+              .left_wrap
+                ul
+                  list-style none
+                  li
+                    //padding 15px 0
+                    border-bottom 2px solid #f3f4f5
+                    width 70px
+                    height 50px
+                    font-size 13px
+                    text-overflow ellipsis
+                    white-space nowrap
+                    overflow hidden
+                    background #ffffff
+                    text-align center
+                    list-style none
+                    &.on
+                      background-color #f3f4f5
+                      color #ed4044
+
+            .d2_right
+              float right
+              background #ffffff
+              .d2_wrap2
+                padding 5px 5px 20px
+                border-top 1px solid #f3f4f5
+                a
+                  font-size 12px
+                  display block
+                  color #999999
+                  padding-left 14px
+                  margin-top 10px
+                  text-decoration none
+                  margin-left -2px
+                ul
+                  display block
+                  list-style none
+                  li
+                    width 29.3%
+                    padding 0 5px
+                    margin-top 10px
+                    float left
+                    list-style none
+                    a
+                      display block
+                      color #333333
+                      text-decoration none
+                      div
+                        background-size 120px auto
+                        position relative
+                        padding-top 100%
+                        img
+                          top 0
+                          left 0
+                          position absolute
+                          vertical-align middle
+                          width 100%
+                          border 0
+                      p
+                        overflow hidden
+                        text-overflow ellipsis
+                        white-space nowrap
+                        height 20px
+                        color #333333
+                        font-size 13px
+                        margin-top 10px
+                        text-align center
+          .header3
+            color #333333
+            height 50px
+            line-height 50px
+            position relative
+            padding 0 2px
+            border-bottom 1px solid #f3f3f3
+            background #ffffff
+            text-align center
+            .header3_1
+              .header3_a1
+                background-size 9px 17px
+                display block
+                width 22px
+                height 20px
+                position absolute
+                color #333333
+                text-decoration none
+                -webkit-tap-highlight-color transparent
+              .header3_s1
+                width 90%
+                text-overflow ellipsis
+                white-space nowrap
+                overflow hidden
+                display inline-block
+                margin 0 auto
+                font-size 18px
+              .header3_a2
+                background-size 20px 20px
+                display block
+                width 36px
+                height 20px
+                position absolute
+                color #333333
+                right 2px
+                float right
+                margin-top -67px
+                text-decoration none
+                -webkit-tap-highlight-color transparent
+                i
+                  font-size 24px
+          .header3_wrap
+            .header3_img
+              padding-bottom 50px
+              background #ffffff
+              text-align center
+              .header3_s1
+                margin 50px auto 20px
+                display inline-block
+                width 100px
+                height 100px
+                //background-size 105px auto
+                .icon
+                  font-size 125px
+                  color #898989
+            .header3_text
+              color #dbdbdb
+              font-size 16px
+              text-align center
+            .header3_bottom
+              margin 20px
+              display flex
+              justify-content space-around
+              a
+                display inline-block
+                border-radius 5px
+                border 1px solid #999999
+                height 40px
+                line-height 40px
+                width 100px
+                text-decoration none
+                text-align center
+                &.header3_a1
+                  color #999
+                  font-size 20px
+                &.header3_a2
+                  color #999
+                  font-size 20px
+          .header4
+            background url("../images/bg.png") no-repeat
+            background-size 100% 100%
+            .header4_d1
+              border-bottom 0
+              height 50px
+              line-height 50px
+              position relative
+              padding 0 2px
+              text-align center
+              a
+                background-size 12px 17px
+                display block
+                width 36px
+                height 20px
+                position absolute
+                margin-top 0
+                text-decoration none
+                -webkit-tap-highlight-color transparent
+                .icon
+                  background red
+              .header4_test
+                right 50px
+                position absolute
+                display block
+                font-size 18px
+                a
+                  color #ffffff
+                  text-decoration none
+            .header4_d2
+              padding 1px 0 2px 0
+              img
+                display block
+                margin auto
+                width 20%
+                vertical-align middle
+                border none
+            .header4_d3
+              height 44px
+              background-color rgba(255,255,255,0.3)
+              ul
+                list-style none
+                li
+                  float left
+                  width 50%
+                  text-align center
+                  height 44px
+                  line-height 44px
+                  position relative
+                  list-style none
+                  a
+                    font-size 15px
+                    color #ffffff
+                    display block
+                    text-decoration none
+                  i
+                    display none
+                    width 0
+                    height 0
+                    border-left 10px solid transparent
+                    border-right: 10px solid transparent
+                    border-bottom: 10px solid #fff
+                    position absolute
+                    bottom 0
+                    left 0
+                    right 0
+                    margin auto
+                    font-style normal
+                    &.triangle
+                      display block
+          .wrap_4
+            height 384px
+            background #ffffff
+            .wrap_d1
+              background #ffffff
+              border-radius 2px
+              margin 0 4% 2px 4%
+              padding 0 1.6%
+              height 92px
+              .wrap_d2
+                .wrap_form
+                  margin 0
+                  padding 0
+                  .wrap_d3
+                    .d3_ul
+                      list-style none
+                      .d3_l1
+                        border-bottom #e2e2e2 solid 1px
+                        padding 12px 0 12px 30px
+                        position relative
+                        .d4_icon1
+                          float left
+                          display inline
+                          width 17px
+                          height 21px
+                          background-size contain
+                          margin 1px 0 0 -25px
+                        .d4_text
+                          display block
+                          height 21px
+                          width 100%
+                          font-size 15px
+                          border none
+                          padding 0
+                          color #666666
+                          font-family "Microsoft YaHei",Tahoma,Arial
+                          outline none
+                          border-radius 3px
+                          -webkit-appearance none
+                      .d3_l2
+                        border-bottom #e2e2e2 solid 1px
+                        padding 12px 0 12px 30px
+                        position relative
+                        .d4_icon2
+                          float left
+                          display inline
+                          width 17px
+                          height 20px
+                          margin 0 0 0 -25px
+                          background-size contain
+
+                        .text
+                          display block
+                          height 21px
+                          width 100%
+                          font-size 15px
+                          border none
+                          padding 0
+                          color #666666
+                          outline none
+            .wrap_d2
+              margin-top 10px
+              width 100%
+              height 20px
+              padding-left 4px
+              padding-right 4px
+              text-align center
+              a
+                color #898989
+                font-size 14px
+                float right
+                text-decoration none
+                -webkit-tap-highlight-color transparent
+            .wrap_d3
+              padding-top 4px
+              text-align center
+              a
+                margin 0.4%
+                display block
+                letter-spacing 5px
+                border-radius 5px
+                background #2ec975
+                font-size 15px
+                padding 14px 0
+                text-align center
+                color #ffffff
+                text-decoration none
+            .wrap_d4
+              .d4_text
+                color: #d7d7d7;
+                margin-top:10px
+                font-size 18px
+                text-align center
+                b
+                  font-weight normal
+              .d4_ul
+                padding 10px 0
+                list-style none
+                li
+                  width 33.3%
+                  padding 0 30px
+                  float left
+                  display inline
+                  list-style none
+                  a
+                    display block
+                    color #333333
+                    text-decoration none
+
+    .footer
+      top-border-1px(red)
+      position fixed
+      bottom 0
+      left 0
+      right 0
+      height 50px
+      background #fff
+      text-align center
+      display flex
+      a
+        display flex
+        flex 1
+        align-items center
+        flex-direction column
+        flex-wrap wrap
+        font-size 12px
+        color #999
+        &.on
+          color #02a774
+        .footer_icon
+          margin 5px 0
+          .icon
+            font-size 22px
+
